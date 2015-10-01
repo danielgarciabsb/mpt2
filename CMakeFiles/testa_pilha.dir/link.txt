@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/testa_pilha.dir/tests.cpp.o  -o testa_pilha -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread whattotest/libwhattotest.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libwhattotest.a  CMakeFiles/whattotest.dir/whattotest.cpp.o
+/usr/bin/ranlib libwhattotest.a

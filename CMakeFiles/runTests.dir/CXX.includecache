@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daniel/Documentos/MP_2/tests.cpp
+whattotest.h
+/home/daniel/Documentos/MP_2/whattotest.h
+gtest/gtest.h
+/home/daniel/Documentos/MP_2/gtest/gtest.h
+
+include/whattotest.h
+
