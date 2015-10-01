@@ -11,6 +11,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "CodeCoverage.cmake"
   "pilha_lista/CMakeLists.txt"
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
@@ -46,5 +47,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/testa_pilha.dir/DependInfo.cmake"
+  "CMakeFiles/testa_pilha_coverage.dir/DependInfo.cmake"
   "pilha_lista/CMakeFiles/pilha_lista.dir/DependInfo.cmake"
   )

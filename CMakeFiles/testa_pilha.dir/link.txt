@@ -1,1 +1,1 @@
-/usr/bin/c++       CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o  -o testa_pilha -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread pilha_lista/libpilha_lista.a 
+/usr/bin/c++    -g -O0 -fprofile-arcs -ftest-coverage --coverage -g    -g -O0 -fprofile-arcs -ftest-coverage --coverage CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o  -o testa_pilha -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread pilha_lista/libpilha_lista.a -lgcov 

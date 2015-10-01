@@ -1,0 +1,1 @@
+make testa_pilha_coverage

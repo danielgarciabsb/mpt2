@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+3acc756b826c360095dbe43a9f38b535 CMakeFiles/testa_pilha_coverage

@@ -153,6 +153,19 @@ testa_pilha/fast:
 .PHONY : testa_pilha/fast
 
 #=============================================================================
+# Target rules for targets named testa_pilha_coverage
+
+# Build rule for target.
+testa_pilha_coverage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testa_pilha_coverage
+.PHONY : testa_pilha_coverage
+
+# fast build rule for target.
+testa_pilha_coverage/fast:
+	$(MAKE) -f CMakeFiles/testa_pilha_coverage.dir/build.make CMakeFiles/testa_pilha_coverage.dir/build
+.PHONY : testa_pilha_coverage/fast
+
+#=============================================================================
 # Target rules for targets named pilha_lista
 
 # Build rule for target.
@@ -202,6 +215,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... testa_pilha"
+	@echo "... testa_pilha_coverage"
 	@echo "... pilha_lista"
 	@echo "... testa_pilha.o"
 	@echo "... testa_pilha.i"

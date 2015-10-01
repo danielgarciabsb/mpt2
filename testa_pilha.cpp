@@ -263,7 +263,7 @@ TEST(PilhaLista, Pop2Elem) {
 
 /**
 * Assertiva de entrada
-* Verifica se o topo é = 1
+* Verifica se o topo é = 1 - Pilha: [0,1]
 */
 
 TEST(PilhaLista, TopoPosPop2Elem) {
@@ -274,17 +274,20 @@ TEST(PilhaLista, TopoPosPop2Elem) {
 /**
 * Assertiva de entrada
 * Remove 10 elementos da pilha, sendo que so tem 2
+* - Pilha: []
 */
 
 TEST(PilhaLista, Pop10Elem) {
     int i;
     for(i = 1; i <= 10; i++)
       pv = pop(&pilha);
+    ASSERT_TRUE(pv == NULL);
+    ASSERT_FALSE(pv != NULL);
 }
 
 /**
 * Assertiva de entrada
-* Verifica o topo de pilha vazia
+* Verifica o topo de pilha vazia - Pilha: []
 */
 
 TEST(PilhaLista, TopoNovaPilhaVazia) {
