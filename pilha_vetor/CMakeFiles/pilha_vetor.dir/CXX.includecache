@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daniel/Documentos/MP_2/pilha_vetor/pilha_vetor.cpp
+stdio.h
+-
+stdlib.h
+-
+pilha_vetor.h
+/home/daniel/Documentos/MP_2/pilha_vetor/pilha_vetor.h
+
+include/pilha_vetor.h
+

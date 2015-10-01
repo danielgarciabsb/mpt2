@@ -82,7 +82,7 @@ testa_pilha_EXTERNAL_OBJECTS =
 testa_pilha: CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o
 testa_pilha: CMakeFiles/testa_pilha.dir/build.make
 testa_pilha: /usr/lib/libgtest.a
-testa_pilha: pilha_lista/libpilha_lista.a
+testa_pilha: pilha_vetor/libpilha_vetor.a
 testa_pilha: CMakeFiles/testa_pilha.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable testa_pilha"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testa_pilha.dir/link.txt --verbose=$(VERBOSE)

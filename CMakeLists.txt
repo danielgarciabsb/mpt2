@@ -1,19 +1,21 @@
 cmake_minimum_required(VERSION 2.8)
 
+# Nome do projeto
 project(testa_pilha)
 
-# Locate GTest
+# Tipo da pilha: "pilha_lista" ou "pilha_vetor"
+set(TIPO_PILHA pilha_vetor)
+
+# Localizar GTest
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
 set(INCLUDE_DIR include)
 include_directories (${INCLUDE_DIR})
 
-#ADD_SUBDIRECTORY(whattotest)
-ADD_SUBDIRECTORY(pilha_lista)
+ADD_SUBDIRECTORY(${TIPO_PILHA})
 
-set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMakeModules)
-
+# Configuracoes do GCOV
 INCLUDE(CodeCoverage.cmake)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage --coverage")
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage --coverage")
@@ -23,8 +25,8 @@ SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -g -O0 -fprofile-arcs -fte
 SETUP_TARGET_FOR_COVERAGE(${PROJECT_NAME}_coverage ${PROJECT_NAME} coverage)
 
 
-# Link runTests with what we want to test and the GTest and pthread library
-add_executable(testa_pilha testa_pilha.cpp)
-target_link_libraries(testa_pilha ${GTEST_LIBRARIES} pthread pilha_lista gcov)
+# Linkar projeto com a biblioteca GTest, pthread e gcov
+add_executable(${PROJECT_NAME} testa_pilha.cpp)
+target_link_libraries(${PROJECT_NAME} ${GTEST_LIBRARIES} pthread ${TIPO_PILHA} gcov)
 
-install(TARGETS testa_pilha DESTINATION bin)
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)

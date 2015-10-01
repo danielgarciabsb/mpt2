@@ -56,7 +56,7 @@ CMAKE_BINARY_DIR = /home/daniel/Documentos/MP_2
 # Target rules for target CMakeFiles/testa_pilha.dir
 
 # All Build rule for target.
-CMakeFiles/testa_pilha.dir/all: pilha_lista/CMakeFiles/pilha_lista.dir/all
+CMakeFiles/testa_pilha.dir/all: pilha_vetor/CMakeFiles/pilha_vetor.dir/all
 	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/depend
 	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/daniel/Documentos/MP_2/CMakeFiles  2
@@ -119,53 +119,53 @@ clean: CMakeFiles/testa_pilha_coverage.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory pilha_lista
+# Directory level rules for directory pilha_vetor
 
 # Convenience name for "all" pass in the directory.
-pilha_lista/all: pilha_lista/CMakeFiles/pilha_lista.dir/all
-.PHONY : pilha_lista/all
+pilha_vetor/all: pilha_vetor/CMakeFiles/pilha_vetor.dir/all
+.PHONY : pilha_vetor/all
 
 # Convenience name for "clean" pass in the directory.
-pilha_lista/clean: pilha_lista/CMakeFiles/pilha_lista.dir/clean
-.PHONY : pilha_lista/clean
+pilha_vetor/clean: pilha_vetor/CMakeFiles/pilha_vetor.dir/clean
+.PHONY : pilha_vetor/clean
 
 # Convenience name for "preinstall" pass in the directory.
-pilha_lista/preinstall:
-.PHONY : pilha_lista/preinstall
+pilha_vetor/preinstall:
+.PHONY : pilha_vetor/preinstall
 
 #=============================================================================
-# Target rules for target pilha_lista/CMakeFiles/pilha_lista.dir
+# Target rules for target pilha_vetor/CMakeFiles/pilha_vetor.dir
 
 # All Build rule for target.
-pilha_lista/CMakeFiles/pilha_lista.dir/all:
-	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/depend
-	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/build
+pilha_vetor/CMakeFiles/pilha_vetor.dir/all:
+	$(MAKE) -f pilha_vetor/CMakeFiles/pilha_vetor.dir/build.make pilha_vetor/CMakeFiles/pilha_vetor.dir/depend
+	$(MAKE) -f pilha_vetor/CMakeFiles/pilha_vetor.dir/build.make pilha_vetor/CMakeFiles/pilha_vetor.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/daniel/Documentos/MP_2/CMakeFiles  1
-	@echo "Built target pilha_lista"
-.PHONY : pilha_lista/CMakeFiles/pilha_lista.dir/all
+	@echo "Built target pilha_vetor"
+.PHONY : pilha_vetor/CMakeFiles/pilha_vetor.dir/all
 
 # Include target in all.
-all: pilha_lista/CMakeFiles/pilha_lista.dir/all
+all: pilha_vetor/CMakeFiles/pilha_vetor.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-pilha_lista/CMakeFiles/pilha_lista.dir/rule: cmake_check_build_system
+pilha_vetor/CMakeFiles/pilha_vetor.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Documentos/MP_2/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 pilha_lista/CMakeFiles/pilha_lista.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 pilha_vetor/CMakeFiles/pilha_vetor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Documentos/MP_2/CMakeFiles 0
-.PHONY : pilha_lista/CMakeFiles/pilha_lista.dir/rule
+.PHONY : pilha_vetor/CMakeFiles/pilha_vetor.dir/rule
 
 # Convenience name for target.
-pilha_lista: pilha_lista/CMakeFiles/pilha_lista.dir/rule
-.PHONY : pilha_lista
+pilha_vetor: pilha_vetor/CMakeFiles/pilha_vetor.dir/rule
+.PHONY : pilha_vetor
 
 # clean rule for target.
-pilha_lista/CMakeFiles/pilha_lista.dir/clean:
-	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/clean
-.PHONY : pilha_lista/CMakeFiles/pilha_lista.dir/clean
+pilha_vetor/CMakeFiles/pilha_vetor.dir/clean:
+	$(MAKE) -f pilha_vetor/CMakeFiles/pilha_vetor.dir/build.make pilha_vetor/CMakeFiles/pilha_vetor.dir/clean
+.PHONY : pilha_vetor/CMakeFiles/pilha_vetor.dir/clean
 
 # clean rule for target.
-clean: pilha_lista/CMakeFiles/pilha_lista.dir/clean
+clean: pilha_vetor/CMakeFiles/pilha_vetor.dir/clean
 .PHONY : clean
 
 #=============================================================================

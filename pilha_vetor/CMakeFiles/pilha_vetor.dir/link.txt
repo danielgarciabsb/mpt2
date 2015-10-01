@@ -1,0 +1,2 @@
+/usr/bin/ar cr libpilha_vetor.a  CMakeFiles/pilha_vetor.dir/pilha_vetor.cpp.o
+/usr/bin/ranlib libpilha_vetor.a

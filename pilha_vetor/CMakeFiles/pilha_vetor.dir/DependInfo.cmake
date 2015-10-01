@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/daniel/Documentos/MP_2/whattotest/whattotest.cpp" "/home/daniel/Documentos/MP_2/whattotest/CMakeFiles/whattotest.dir/whattotest.cpp.o"
+  "/home/daniel/Documentos/MP_2/pilha_vetor/pilha_vetor.cpp" "/home/daniel/Documentos/MP_2/pilha_vetor/CMakeFiles/pilha_vetor.dir/pilha_vetor.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -6,15 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/daniel/Documentos/MP_2/testa_pilha.cpp
-stdio.h
--
-stdlib.h
--
-pilha_lista.h
-/home/daniel/Documentos/MP_2/pilha_lista.h
-gtest/gtest.h
-/home/daniel/Documentos/MP_2/gtest/gtest.h
-
-include/pilha_lista.h
-

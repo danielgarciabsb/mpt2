@@ -1,3 +1,3 @@
 FILE(REMOVE_RECURSE
-  "libwhattotest.a"
+  "libpilha_vetor.a"
 )

@@ -12,7 +12,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
   "CMakeLists.txt"
   "CodeCoverage.cmake"
-  "pilha_lista/CMakeLists.txt"
+  "pilha_vetor/CMakeLists.txt"
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake"
@@ -41,12 +41,12 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "pilha_lista/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pilha_vetor/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/testa_pilha.dir/DependInfo.cmake"
   "CMakeFiles/testa_pilha_coverage.dir/DependInfo.cmake"
-  "pilha_lista/CMakeFiles/pilha_lista.dir/DependInfo.cmake"
+  "pilha_vetor/CMakeFiles/pilha_vetor.dir/DependInfo.cmake"
   )

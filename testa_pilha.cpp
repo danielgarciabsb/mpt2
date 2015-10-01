@@ -7,7 +7,7 @@
 pilhaNode pilha = NULL;
 pilhaValue pv = NULL;
 
-int manual();
+//int manual();
 
 /**
 * Assertiva de entrada
@@ -302,7 +302,7 @@ int main(int argc, char **argv) {
     return RUN_ALL_TESTS();
 }
 
-
+/*
 int manual() {
 
     #ifdef PILHA_LISTA
@@ -384,3 +384,4 @@ int manual() {
 
     return 0;
 }
+*/

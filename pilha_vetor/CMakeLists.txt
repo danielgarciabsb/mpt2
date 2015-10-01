@@ -1,3 +1,6 @@
-cmake_minimum_required(VERSION 2.8)
+project(pilha_vetor)
 
-#ADD_LIBRARY(pilha_lista pilha_vetor.c)
+add_library(pilha_vetor STATIC pilha_vetor.cpp)
+
+install(TARGETS pilha_vetor DESTINATION lib)
+install(FILES pilha_vetor.h DESTINATION include)
