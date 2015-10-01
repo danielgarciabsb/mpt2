@@ -1,0 +1,2 @@
+/usr/bin/ar cr libpilha_lista.a  CMakeFiles/pilha_lista.dir/pilha_lista.cpp.o
+/usr/bin/ranlib libpilha_lista.a

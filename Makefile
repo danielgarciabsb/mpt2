@@ -153,41 +153,41 @@ testa_pilha/fast:
 .PHONY : testa_pilha/fast
 
 #=============================================================================
-# Target rules for targets named whattotest
+# Target rules for targets named pilha_lista
 
 # Build rule for target.
-whattotest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 whattotest
-.PHONY : whattotest
+pilha_lista: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pilha_lista
+.PHONY : pilha_lista
 
 # fast build rule for target.
-whattotest/fast:
-	$(MAKE) -f whattotest/CMakeFiles/whattotest.dir/build.make whattotest/CMakeFiles/whattotest.dir/build
-.PHONY : whattotest/fast
+pilha_lista/fast:
+	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/build
+.PHONY : pilha_lista/fast
 
-tests.o: tests.cpp.o
-.PHONY : tests.o
+testa_pilha.o: testa_pilha.cpp.o
+.PHONY : testa_pilha.o
 
 # target to build an object file
-tests.cpp.o:
-	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/tests.cpp.o
-.PHONY : tests.cpp.o
+testa_pilha.cpp.o:
+	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o
+.PHONY : testa_pilha.cpp.o
 
-tests.i: tests.cpp.i
-.PHONY : tests.i
+testa_pilha.i: testa_pilha.cpp.i
+.PHONY : testa_pilha.i
 
 # target to preprocess a source file
-tests.cpp.i:
-	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/tests.cpp.i
-.PHONY : tests.cpp.i
+testa_pilha.cpp.i:
+	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/testa_pilha.cpp.i
+.PHONY : testa_pilha.cpp.i
 
-tests.s: tests.cpp.s
-.PHONY : tests.s
+testa_pilha.s: testa_pilha.cpp.s
+.PHONY : testa_pilha.s
 
 # target to generate assembly for a file
-tests.cpp.s:
-	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/tests.cpp.s
-.PHONY : tests.cpp.s
+testa_pilha.cpp.s:
+	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/testa_pilha.cpp.s
+.PHONY : testa_pilha.cpp.s
 
 # Help Target
 help:
@@ -202,10 +202,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... testa_pilha"
-	@echo "... whattotest"
-	@echo "... tests.o"
-	@echo "... tests.i"
-	@echo "... tests.s"
+	@echo "... pilha_lista"
+	@echo "... testa_pilha.o"
+	@echo "... testa_pilha.i"
+	@echo "... testa_pilha.s"
 .PHONY : help
 
 

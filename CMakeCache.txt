@@ -191,8 +191,14 @@ Project_BINARY_DIR:STATIC=/home/daniel/Documentos/MP_2
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/daniel/Documentos/MP_2
 
+//Value Computed by CMake
+pilha_lista_BINARY_DIR:STATIC=/home/daniel/Documentos/MP_2/pilha_lista
+
 //Dependencies for target
 pilha_lista_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+pilha_lista_SOURCE_DIR:STATIC=/home/daniel/Documentos/MP_2/pilha_lista
 
 //Value Computed by CMake
 testa_pilha_BINARY_DIR:STATIC=/home/daniel/Documentos/MP_2

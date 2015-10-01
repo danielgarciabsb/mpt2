@@ -56,10 +56,10 @@ CMAKE_BINARY_DIR = /home/daniel/Documentos/MP_2
 # Target rules for target CMakeFiles/testa_pilha.dir
 
 # All Build rule for target.
-CMakeFiles/testa_pilha.dir/all: whattotest/CMakeFiles/whattotest.dir/all
+CMakeFiles/testa_pilha.dir/all: pilha_lista/CMakeFiles/pilha_lista.dir/all
 	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/depend
 	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/daniel/Documentos/MP_2/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/daniel/Documentos/MP_2/CMakeFiles  2
 	@echo "Built target testa_pilha"
 .PHONY : CMakeFiles/testa_pilha.dir/all
 
@@ -88,53 +88,53 @@ clean: CMakeFiles/testa_pilha.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory whattotest
+# Directory level rules for directory pilha_lista
 
 # Convenience name for "all" pass in the directory.
-whattotest/all: whattotest/CMakeFiles/whattotest.dir/all
-.PHONY : whattotest/all
+pilha_lista/all: pilha_lista/CMakeFiles/pilha_lista.dir/all
+.PHONY : pilha_lista/all
 
 # Convenience name for "clean" pass in the directory.
-whattotest/clean: whattotest/CMakeFiles/whattotest.dir/clean
-.PHONY : whattotest/clean
+pilha_lista/clean: pilha_lista/CMakeFiles/pilha_lista.dir/clean
+.PHONY : pilha_lista/clean
 
 # Convenience name for "preinstall" pass in the directory.
-whattotest/preinstall:
-.PHONY : whattotest/preinstall
+pilha_lista/preinstall:
+.PHONY : pilha_lista/preinstall
 
 #=============================================================================
-# Target rules for target whattotest/CMakeFiles/whattotest.dir
+# Target rules for target pilha_lista/CMakeFiles/pilha_lista.dir
 
 # All Build rule for target.
-whattotest/CMakeFiles/whattotest.dir/all:
-	$(MAKE) -f whattotest/CMakeFiles/whattotest.dir/build.make whattotest/CMakeFiles/whattotest.dir/depend
-	$(MAKE) -f whattotest/CMakeFiles/whattotest.dir/build.make whattotest/CMakeFiles/whattotest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/daniel/Documentos/MP_2/CMakeFiles  2
-	@echo "Built target whattotest"
-.PHONY : whattotest/CMakeFiles/whattotest.dir/all
+pilha_lista/CMakeFiles/pilha_lista.dir/all:
+	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/depend
+	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/daniel/Documentos/MP_2/CMakeFiles  1
+	@echo "Built target pilha_lista"
+.PHONY : pilha_lista/CMakeFiles/pilha_lista.dir/all
 
 # Include target in all.
-all: whattotest/CMakeFiles/whattotest.dir/all
+all: pilha_lista/CMakeFiles/pilha_lista.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-whattotest/CMakeFiles/whattotest.dir/rule: cmake_check_build_system
+pilha_lista/CMakeFiles/pilha_lista.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Documentos/MP_2/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 whattotest/CMakeFiles/whattotest.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 pilha_lista/CMakeFiles/pilha_lista.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/Documentos/MP_2/CMakeFiles 0
-.PHONY : whattotest/CMakeFiles/whattotest.dir/rule
+.PHONY : pilha_lista/CMakeFiles/pilha_lista.dir/rule
 
 # Convenience name for target.
-whattotest: whattotest/CMakeFiles/whattotest.dir/rule
-.PHONY : whattotest
+pilha_lista: pilha_lista/CMakeFiles/pilha_lista.dir/rule
+.PHONY : pilha_lista
 
 # clean rule for target.
-whattotest/CMakeFiles/whattotest.dir/clean:
-	$(MAKE) -f whattotest/CMakeFiles/whattotest.dir/build.make whattotest/CMakeFiles/whattotest.dir/clean
-.PHONY : whattotest/CMakeFiles/whattotest.dir/clean
+pilha_lista/CMakeFiles/pilha_lista.dir/clean:
+	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/clean
+.PHONY : pilha_lista/CMakeFiles/pilha_lista.dir/clean
 
 # clean rule for target.
-clean: whattotest/CMakeFiles/whattotest.dir/clean
+clean: pilha_lista/CMakeFiles/pilha_lista.dir/clean
 .PHONY : clean
 
 #=============================================================================

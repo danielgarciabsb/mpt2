@@ -9,10 +9,11 @@ include_directories(${GTEST_INCLUDE_DIRS})
 set(INCLUDE_DIR include)
 include_directories (${INCLUDE_DIR})
 
-ADD_SUBDIRECTORY(whattotest)
+#ADD_SUBDIRECTORY(whattotest)
+ADD_SUBDIRECTORY(pilha_lista)
 
 # Link runTests with what we want to test and the GTest and pthread library
-add_executable(testa_pilha tests.cpp)
-target_link_libraries(testa_pilha ${GTEST_LIBRARIES} pthread whattotest)
+add_executable(testa_pilha testa_pilha.cpp)
+target_link_libraries(testa_pilha ${GTEST_LIBRARIES} pthread pilha_lista)
 
 install(TARGETS testa_pilha DESTINATION bin)

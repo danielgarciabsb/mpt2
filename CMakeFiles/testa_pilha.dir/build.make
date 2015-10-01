@@ -49,40 +49,40 @@ include CMakeFiles/testa_pilha.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/testa_pilha.dir/flags.make
 
-CMakeFiles/testa_pilha.dir/tests.cpp.o: CMakeFiles/testa_pilha.dir/flags.make
-CMakeFiles/testa_pilha.dir/tests.cpp.o: tests.cpp
+CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o: CMakeFiles/testa_pilha.dir/flags.make
+CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o: testa_pilha.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/daniel/Documentos/MP_2/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/testa_pilha.dir/tests.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/testa_pilha.dir/tests.cpp.o -c /home/daniel/Documentos/MP_2/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o -c /home/daniel/Documentos/MP_2/testa_pilha.cpp
 
-CMakeFiles/testa_pilha.dir/tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testa_pilha.dir/tests.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/daniel/Documentos/MP_2/tests.cpp > CMakeFiles/testa_pilha.dir/tests.cpp.i
+CMakeFiles/testa_pilha.dir/testa_pilha.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testa_pilha.dir/testa_pilha.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/daniel/Documentos/MP_2/testa_pilha.cpp > CMakeFiles/testa_pilha.dir/testa_pilha.cpp.i
 
-CMakeFiles/testa_pilha.dir/tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testa_pilha.dir/tests.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/daniel/Documentos/MP_2/tests.cpp -o CMakeFiles/testa_pilha.dir/tests.cpp.s
+CMakeFiles/testa_pilha.dir/testa_pilha.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testa_pilha.dir/testa_pilha.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/daniel/Documentos/MP_2/testa_pilha.cpp -o CMakeFiles/testa_pilha.dir/testa_pilha.cpp.s
 
-CMakeFiles/testa_pilha.dir/tests.cpp.o.requires:
-.PHONY : CMakeFiles/testa_pilha.dir/tests.cpp.o.requires
+CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.requires:
+.PHONY : CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.requires
 
-CMakeFiles/testa_pilha.dir/tests.cpp.o.provides: CMakeFiles/testa_pilha.dir/tests.cpp.o.requires
-	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/tests.cpp.o.provides.build
-.PHONY : CMakeFiles/testa_pilha.dir/tests.cpp.o.provides
+CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.provides: CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.requires
+	$(MAKE) -f CMakeFiles/testa_pilha.dir/build.make CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.provides.build
+.PHONY : CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.provides
 
-CMakeFiles/testa_pilha.dir/tests.cpp.o.provides.build: CMakeFiles/testa_pilha.dir/tests.cpp.o
+CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.provides.build: CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o
 
 # Object files for target testa_pilha
 testa_pilha_OBJECTS = \
-"CMakeFiles/testa_pilha.dir/tests.cpp.o"
+"CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o"
 
 # External object files for target testa_pilha
 testa_pilha_EXTERNAL_OBJECTS =
 
-testa_pilha: CMakeFiles/testa_pilha.dir/tests.cpp.o
+testa_pilha: CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o
 testa_pilha: CMakeFiles/testa_pilha.dir/build.make
 testa_pilha: /usr/lib/libgtest.a
-testa_pilha: whattotest/libwhattotest.a
+testa_pilha: pilha_lista/libpilha_lista.a
 testa_pilha: CMakeFiles/testa_pilha.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable testa_pilha"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testa_pilha.dir/link.txt --verbose=$(VERBOSE)
@@ -91,7 +91,7 @@ testa_pilha: CMakeFiles/testa_pilha.dir/link.txt
 CMakeFiles/testa_pilha.dir/build: testa_pilha
 .PHONY : CMakeFiles/testa_pilha.dir/build
 
-CMakeFiles/testa_pilha.dir/requires: CMakeFiles/testa_pilha.dir/tests.cpp.o.requires
+CMakeFiles/testa_pilha.dir/requires: CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o.requires
 .PHONY : CMakeFiles/testa_pilha.dir/requires
 
 CMakeFiles/testa_pilha.dir/clean:
