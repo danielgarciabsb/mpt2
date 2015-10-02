@@ -1,5 +1,3 @@
-project(pilha_vetor)
-
 add_library(pilha_vetor STATIC pilha_vetor.cpp)
 
 install(TARGETS pilha_vetor DESTINATION lib)
