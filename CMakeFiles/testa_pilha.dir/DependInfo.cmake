@@ -10,7 +10,7 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/daniel/Documentos/MP_2/pilha_vetor/CMakeFiles/pilha_vetor.dir/DependInfo.cmake"
+  "/home/daniel/Documentos/MP_2/pilha_lista/CMakeFiles/pilha_lista.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

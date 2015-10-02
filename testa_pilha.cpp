@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "pilha_lista.h"
+#include "pilha_vetor.h"
 #include "gtest/gtest.h"
 
 pilhaNode pilha = NULL;
@@ -14,7 +14,7 @@ pilhaValue pv = NULL;
 * Remoção de elemento de pilha vazia
 */
 
-TEST(PilhaLista, PopVazio) {
+TEST(Pilha, PopVazio) {
     pv = NULL;
     pv = pop(&pilha);
     // Verifica se o valor retornado é um ponteiro inválido
@@ -28,20 +28,15 @@ TEST(PilhaLista, PopVazio) {
 * Criação de nova pilha com a insercao de 1 elemento
 */
 
-TEST(PilhaLista, Criacao) {
+TEST(Pilha, Criacao) {
     pv = (pilhaValue) malloc(sizeof(pilhaValue));
-    pilha = push(pilha, pv);
     pv->value = 0;
+    pilha = push(pilha, pv);
     ASSERT_FALSE(pilha == NULL);
     ASSERT_FALSE(!pilha);
     // TOP = NULL, no caso do primeiro elemento
-    ASSERT_FALSE(pilha->top);
     ASSERT_TRUE(pilha != NULL);
     ASSERT_TRUE(pilha);
-    // TOP = NULL, no caso do primeiro elemento
-    ASSERT_TRUE(!pilha->top);
-    // Confere se o elemento foi inserido na pilha
-    ASSERT_TRUE(pilha->value->value == 0);
 }
 
 /**
@@ -49,17 +44,15 @@ TEST(PilhaLista, Criacao) {
 * Insercao de 3 elementos
 */
 
-TEST(PilhaLista, InsercaoElem3) {
+TEST(Pilha, InsercaoElem3) {
     int i;
     for(i = 1; i <= 3; i++) {
       pv = (pilhaValue) malloc(sizeof(pilhaValue));
       pv->value = i;
       pilha = push(pilha, pv);
       // Confere se cada elemento foi inserido conforme a ordem
-      ASSERT_TRUE(pilha->value->value == i);
+      //ASSERT_TRUE(pilha->value->value == i);
     }
-    // Confere se o ultimo elemento inserido e o topo da pilha
-    ASSERT_TRUE(pilha->value->value == 3);
 }
 
 /**
@@ -67,7 +60,7 @@ TEST(PilhaLista, InsercaoElem3) {
 * Verifica se o topo é o ultimo elemento inserido
 */
 
-TEST(PilhaLista, TopoElem3) {
+TEST(Pilha, TopoElem3) {
     // Confere se o ultimo elemento inserido e o topo da pilha = 3
     pv = top(pilha);
     ASSERT_EQ(pv->value, 3);
@@ -78,7 +71,7 @@ TEST(PilhaLista, TopoElem3) {
 * Verifica se o pop retorna o ultimo elemento inserido
 */
 
-TEST(PilhaLista, PopElem3) {
+TEST(Pilha, PopElem3) {
     pv = pop(&pilha);
     ASSERT_EQ(pv->value, 3);
 }
@@ -88,7 +81,7 @@ TEST(PilhaLista, PopElem3) {
 * Verifica se o topo é o penultimo elemento inserido
 */
 
-TEST(PilhaLista, TopoElem2) {
+TEST(Pilha, TopoElem2) {
     // Confere se o penultimo elemento inserido e o topo da pilha = 2
     pv = top(pilha);
     ASSERT_EQ(pv->value, 2);
@@ -99,7 +92,7 @@ TEST(PilhaLista, TopoElem2) {
 * Verifica se o pop retorna o penultimo elemento inserido
 */
 
-TEST(PilhaLista, PopElem2) {
+TEST(Pilha, PopElem2) {
     pv = pop(&pilha);
     ASSERT_EQ(pv->value, 2);
 }
@@ -109,7 +102,7 @@ TEST(PilhaLista, PopElem2) {
 * Verifica se o topo é o antepenultimo elemento inserido
 */
 
-TEST(PilhaLista, TopoElem1) {
+TEST(Pilha, TopoElem1) {
     // Confere se o antepenultimo elemento inserido e o topo da pilha = 1
     pv = top(pilha);
     ASSERT_EQ(pv->value, 1);
@@ -120,7 +113,7 @@ TEST(PilhaLista, TopoElem1) {
 * Verifica se o pop retorna o antepenultimo elemento inserido
 */
 
-TEST(PilhaLista, PopElem1) {
+TEST(Pilha, PopElem1) {
     pv = pop(&pilha);
     ASSERT_EQ(pv->value, 1);
 }
@@ -130,7 +123,7 @@ TEST(PilhaLista, PopElem1) {
 * Verifica se o topo é o primeiro elemento inserido
 */
 
-TEST(PilhaLista, TopoElem0) {
+TEST(Pilha, TopoElem0) {
     // Confere se o primeiro elemento inserido e o topo da pilha = 0
     pv = top(pilha);
     ASSERT_EQ(pv->value, 0);
@@ -141,7 +134,7 @@ TEST(PilhaLista, TopoElem0) {
 * Verifica se o pop retorna o primeiro elemento inserido, na criacao
 */
 
-TEST(PilhaLista, PopElem0) {
+TEST(Pilha, PopElem0) {
     pv = pop(&pilha);
     ASSERT_EQ(pv->value, 0);
 }
@@ -151,7 +144,7 @@ TEST(PilhaLista, PopElem0) {
 * Remoção de elemento de pilha vazia
 */
 
-TEST(PilhaLista, PopElemVazio) {
+TEST(Pilha, PopElemVazio) {
     pv = NULL;
     pv = pop(&pilha);
     // Verifica se o valor retornado é um ponteiro inválido
@@ -165,7 +158,7 @@ TEST(PilhaLista, PopElemVazio) {
 * Verifica o topo de pilha vazia
 */
 
-TEST(PilhaLista, TopoPilhaVazia) {
+TEST(Pilha, TopoPilhaVazia) {
     pv = top(pilha);
     ASSERT_TRUE(pv == NULL);
     ASSERT_FALSE(pv != NULL);
@@ -177,20 +170,20 @@ TEST(PilhaLista, TopoPilhaVazia) {
 * - Pilha: [0]
 */
 
-TEST(PilhaLista, Criacao2) {
+TEST(Pilha, Criacao2) {
     pv = (pilhaValue) malloc(sizeof(pilhaValue));
     pilha = push(pilha, pv);
     pv->value = 0;
     ASSERT_FALSE(pilha == NULL);
     ASSERT_FALSE(!pilha);
     // TOP = NULL, no caso do primeiro elemento
-    ASSERT_FALSE(pilha->top);
+    //ASSERT_FALSE(pilha->top);
     ASSERT_TRUE(pilha != NULL);
     ASSERT_TRUE(pilha);
     // TOP = NULL, no caso do primeiro elemento
-    ASSERT_TRUE(!pilha->top);
+  //  ASSERT_TRUE(!pilha->top);
     // Confere se o elemento foi inserido na pilha
-    ASSERT_TRUE(pilha->value->value == 0);
+    //ASSERT_TRUE(pilha->value->value == 0);
 }
 
 /**
@@ -198,17 +191,17 @@ TEST(PilhaLista, Criacao2) {
 * Insere 3 elementos na nova pilha - Pilha: [0,1,2,3]
 */
 
-TEST(PilhaLista, InsercaoNovo3Elem) {
+TEST(Pilha, InsercaoNovo3Elem) {
     int i;
     for(i = 1; i <= 3; i++) {
       pv = (pilhaValue) malloc(sizeof(pilhaValue));
       pv->value = i;
       pilha = push(pilha, pv);
       // Confere se cada elemento foi inserido conforme a ordem
-      ASSERT_TRUE(pilha->value->value == i);
+      //ASSERT_TRUE(pilha->value->value == i);
     }
     // Confere se o ultimo elemento inserido e o topo da pilha
-    ASSERT_TRUE(pilha->value->value == 3);
+    //ASSERT_TRUE(pilha->value->value == 3);
 }
 
 /**
@@ -216,7 +209,7 @@ TEST(PilhaLista, InsercaoNovo3Elem) {
 * Verifica se o topo é o ultimo elemento inserido
 */
 
-TEST(PilhaLista, TopoNovo3Elem) {
+TEST(Pilha, TopoNovo3Elem) {
     // Confere se o ultimo elemento inserido e o topo da pilha = 3
     pv = top(pilha);
     ASSERT_EQ(pv->value, 3);
@@ -228,7 +221,7 @@ TEST(PilhaLista, TopoNovo3Elem) {
 * - Pilha: [0,1,2]
 */
 
-TEST(PilhaLista, PopNovoElem3) {
+TEST(Pilha, PopNovoElem3) {
     pv = pop(&pilha);
     ASSERT_EQ(pv->value, 3);
 }
@@ -239,7 +232,7 @@ TEST(PilhaLista, PopNovoElem3) {
 * o elemento foi inserido corretamente - Pilha: [0,1,2,4]
 */
 
-TEST(PilhaLista, InsercaoNovoElemIntermediario) {
+TEST(Pilha, InsercaoNovoElemIntermediario) {
     pv = (pilhaValue) malloc(sizeof(pilhaValue));
     pv->value = 4;
     pilha = push(pilha, pv);
@@ -251,7 +244,7 @@ TEST(PilhaLista, InsercaoNovoElemIntermediario) {
 * Remove 2 elementos da pilha [2,4] - Pilha: [0,1]
 */
 
-TEST(PilhaLista, Pop2Elem) {
+TEST(Pilha, Pop2Elem) {
     int i;
     // Remove elemento 4
     pv = pop(&pilha);
@@ -266,7 +259,7 @@ TEST(PilhaLista, Pop2Elem) {
 * Verifica se o topo é = 1 - Pilha: [0,1]
 */
 
-TEST(PilhaLista, TopoPosPop2Elem) {
+TEST(Pilha, TopoPosPop2Elem) {
     pv = top(pilha);
     ASSERT_EQ(pv->value, 1);
 }
@@ -277,7 +270,7 @@ TEST(PilhaLista, TopoPosPop2Elem) {
 * - Pilha: []
 */
 
-TEST(PilhaLista, Pop10Elem) {
+TEST(Pilha, Pop10Elem) {
     int i;
     for(i = 1; i <= 10; i++)
       pv = pop(&pilha);
@@ -290,7 +283,7 @@ TEST(PilhaLista, Pop10Elem) {
 * Verifica o topo de pilha vazia - Pilha: []
 */
 
-TEST(PilhaLista, TopoNovaPilhaVazia) {
+TEST(Pilha, TopoNovaPilhaVazia) {
     pv = top(pilha);
     ASSERT_TRUE(pv == NULL);
     ASSERT_FALSE(pv != NULL);
@@ -303,7 +296,7 @@ int main(int argc, char **argv) {
 }
 
 /*
-int manual() {
+int main() {
 
     #ifdef PILHA_LISTA
         printf("\n\nPilha de Lista Encadeada\n");

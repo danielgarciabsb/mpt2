@@ -166,17 +166,17 @@ testa_pilha_coverage/fast:
 .PHONY : testa_pilha_coverage/fast
 
 #=============================================================================
-# Target rules for targets named pilha_vetor
+# Target rules for targets named pilha_lista
 
 # Build rule for target.
-pilha_vetor: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pilha_vetor
-.PHONY : pilha_vetor
+pilha_lista: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pilha_lista
+.PHONY : pilha_lista
 
 # fast build rule for target.
-pilha_vetor/fast:
-	$(MAKE) -f pilha_vetor/CMakeFiles/pilha_vetor.dir/build.make pilha_vetor/CMakeFiles/pilha_vetor.dir/build
-.PHONY : pilha_vetor/fast
+pilha_lista/fast:
+	$(MAKE) -f pilha_lista/CMakeFiles/pilha_lista.dir/build.make pilha_lista/CMakeFiles/pilha_lista.dir/build
+.PHONY : pilha_lista/fast
 
 testa_pilha.o: testa_pilha.cpp.o
 .PHONY : testa_pilha.o
@@ -216,7 +216,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... testa_pilha"
 	@echo "... testa_pilha_coverage"
-	@echo "... pilha_vetor"
+	@echo "... pilha_lista"
 	@echo "... testa_pilha.o"
 	@echo "... testa_pilha.i"
 	@echo "... testa_pilha.s"

@@ -7,12 +7,12 @@ typedef struct pilhaType
 	TIPO_VALOR_PILHA value;
 } * pilhaValue;
 
-#define STACK_MAX 5
+#define STACK_MAX 10
 
 typedef struct pilhaNodeType
 {
-	pilhaValue value[STACK_MAX];
 	int size;
+	pilhaValue value;
 
 } * pilhaNode;
 

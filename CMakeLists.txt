@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 project(testa_pilha)
 
 # Tipo da pilha: "pilha_lista" ou "pilha_vetor"
-set(TIPO_PILHA pilha_vetor)
+set(TIPO_PILHA pilha_lista)
 
 # Localizar GTest
 find_package(GTest REQUIRED)

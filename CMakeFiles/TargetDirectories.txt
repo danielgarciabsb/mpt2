@@ -1,3 +1,3 @@
-/home/daniel/Documentos/MP_2/pilha_vetor/CMakeFiles/pilha_vetor.dir
+/home/daniel/Documentos/MP_2/pilha_lista/CMakeFiles/pilha_lista.dir
 /home/daniel/Documentos/MP_2/CMakeFiles/testa_pilha.dir
 /home/daniel/Documentos/MP_2/CMakeFiles/testa_pilha_coverage.dir

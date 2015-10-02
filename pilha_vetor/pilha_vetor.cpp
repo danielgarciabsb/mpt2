@@ -4,33 +4,33 @@
 #include "pilha_vetor.h"
 
 pilhaNode push(pilhaNode top, pilhaValue value) {
-    if(top == NULL) {
+    if(!top) {
         pilhaNode newNode;
         newNode = (pilhaNode) malloc(sizeof(pilhaNode));
         newNode->size = 0;
-        newNode->value[newNode->size] = value;
+        newNode->value = (pilhaValue) malloc(sizeof(pilhaValue) * STACK_MAX);
+        (newNode->value + newNode->size)->value = value->value;
         return newNode;
     }
     top->size += 1;
     if(top->size < STACK_MAX) {
-        printf("Elemento inserido na posicao: %d\n", top->size);
-        top->value[top->size] = value;
+        (top->value + top->size)->value = value->value;
+        return top;
     }
     else {
         top->size -= 1;
-        printf("Top size: %d\n", top->size );
         return NULL;
     }
 }
 
 pilhaValue pop(pilhaNode * top) {
-    if(top == NULL || (*top)->size == -1) return NULL;
-    pilhaValue value = (*top)->value[(*top)->size];
+    if(!*top || (*top)->size == -1) return NULL;
+    pilhaValue value = ((*top)->value + (*top)->size);
     (*top)->size -= 1;
     return value;
 }
 
 pilhaValue top(pilhaNode top) {
-    if(top == NULL || top->size == -1) return NULL;
-    return top->value[top->size];
+    if(!top || top->size == -1) return NULL;
+    return (top->value + top->size);
 }

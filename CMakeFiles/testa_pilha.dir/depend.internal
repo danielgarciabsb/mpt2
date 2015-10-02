@@ -3,4 +3,4 @@
 
 CMakeFiles/testa_pilha.dir/testa_pilha.cpp.o
  /home/daniel/Documentos/MP_2/testa_pilha.cpp
- include/pilha_lista.h
+ include/pilha_vetor.h
